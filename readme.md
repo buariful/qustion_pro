@@ -7,7 +7,7 @@ Follow these steps to set up and run the project on your local machine:
 Open your terminal and run the following command to clone the repository:
 
 ```bash
-git clone "https://<repository-url>"
+git clone "https://github.com/buariful/qustion_pro.git"
 ```
 
 ## Step:2 Navigate to the project directory and create a .env file. Add the following environment variables:
