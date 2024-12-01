@@ -1,0 +1,80 @@
+{
+  "collection": {
+    "info": {
+      "_postman_id": "0348e5f5-7ed1-4d5a-b533-19df67274c36",
+      "name": "Node Js Task",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "updatedAt": "2024-12-01T14:43:58.000Z",
+      "createdAt": "2024-12-01T14:40:26.000Z",
+      "lastUpdatedBy": "30097604",
+      "uid": "30097604-0348e5f5-7ed1-4d5a-b533-19df67274c36"
+    },
+    "item": [
+      {
+        "name": "get all employees",
+        "id": "76a67244-1bc5-4f61-8cfa-14184cdcae85",
+        "protocolProfileBehavior": { "disableBodyPruning": true },
+        "request": {
+          "auth": { "type": "noauth" },
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:5000/api/v1/employee/get-employee-hierarchy/",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "5000",
+            "path": ["api", "v1", "employee", "get-employee-hierarchy", ""]
+          }
+        },
+        "response": [],
+        "uid": "30097604-76a67244-1bc5-4f61-8cfa-14184cdcae85"
+      },
+      {
+        "name": "get child employees",
+        "id": "42427d1f-a711-4bb6-a008-9f0c0d7dd063",
+        "protocolProfileBehavior": { "disableBodyPruning": true },
+        "request": {
+          "auth": {
+            "type": "bearer",
+            "bearer": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJpYXQiOjE3MzMwNjQwODQsImV4cCI6MTczMzA2NzY4NH0.uS1sf4fP04KN7CPMt6kogTxkVaBL8dXsU3GLwtyzOnU",
+                "type": "string"
+              }
+            ]
+          },
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:5000/api/v1/employee/get-employee-hierarchy/4",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "5000",
+            "path": ["api", "v1", "employee", "get-employee-hierarchy", "4"]
+          }
+        },
+        "response": [],
+        "uid": "30097604-42427d1f-a711-4bb6-a008-9f0c0d7dd063"
+      },
+      {
+        "name": "get JWT token",
+        "id": "ebc1f1f3-eff7-419d-b38a-eb12f3d0e51e",
+        "protocolProfileBehavior": { "disableBodyPruning": true },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:5000/api/v1/employee//get-jwt-token/1",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "5000",
+            "path": ["api", "v1", "employee", "", "get-jwt-token", "1"]
+          }
+        },
+        "response": [],
+        "uid": "30097604-ebc1f1f3-eff7-419d-b38a-eb12f3d0e51e"
+      }
+    ]
+  }
+}
